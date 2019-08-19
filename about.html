@@ -1,0 +1,144 @@
+<html>
+        <head>
+                <title>About Me</title>
+                <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,400i,900&display=swap" rel="stylesheet" />
+                <link href="about.css" type="text/css" rel="stylesheet" />
+        </head>
+        <body>
+                <div id="top">
+                        <div id="page">
+                            <h1>About</h1>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="myFunction()"></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <div class = "subs">
+                                <img src="Icons/House yellow.jpg" width = "50" height = "50" />
+                                <a href="index.html">Home</a>
+                                </div>
+                                <div class = "subs">
+                                        <img src="Icons/Oar black yellow.jpg" width = "50" height = "50" />
+                                        <a href="about.html">About</a>
+                                </div>
+                                <div class = "subs">
+                                        <img src="Icons/Shirt yellow.jpg" width = "50" height = "50" />
+                                        <a href="experience.html">Experience</a>
+                                </div>
+                                <div class = "subs">
+                                        <img src="Icons/Git icon yellow.jpg" width = "50" height = "50" />
+                                        <a href="projects.html">Projects</a>
+                                </div>
+                                <div class = "subs">
+                                        <img src="Icons/Speech Bubble yellow.jpg" width = "50" height = "50" />
+                                        <a href="contact.html">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div id="bottom">
+                    <div id="WhoIAm">
+                    <h2>Who I Am</h2>
+                    <div class ="bio">
+                        <img src ="Icons/tower.jpg" width="75" height="75" />
+                    <p>I'm a student in my third year at Cornell University studying computer science. 
+                        I am interested in both high level theory and practical skills in computing. 
+                        I appreciate simple design and projects with useful applications. 
+                    </p>
+                    </div>
+                    <div class ="bio">
+                        <img src = "Icons/Oar icon yellow.jpg" width="75" height="75" />
+                    <p>
+                        I also compete for Cornell's Varsity Lightweight Rowing team which has a rich tradition
+                        dating back more than one hundred years. We compete against our Ivy League counterparts
+                        and other schools on the east coast. 
+                    </p>
+                    </div>
+                    <div class = "bio">
+                        <img src = "Icons/nj.jpg" width="75" height="75"/>
+                    <p>
+                        I grew up at the Jersey Shore and outside of rowing and studying, I enjoy cooking, hiking, and
+                        reading, and my favorite sports to follow are Major League Baseball and College Football.
+                    </p>
+                    </div>
+                    </div>
+                    <div>
+                        <h2 id="s1">Skills</h2>
+                        <div class="skills">
+                            <img id ="skill1" src="Icons/Menu yellow.jpg" width="200" height="200" />
+                            <h3>Proficient</h3>
+                            <p>Java, OCaml, HTML, CSS</p>
+                        </div>
+                        <div class="skills">
+                            <img id = "skill2" src="Icons/Menu yellow.jpg" width="124" height="124" />
+                            <h3>Practiced</h3>
+                            <p>Python, C, Visual Studio, MS Office</p>
+                        </div>
+                        <div class="skills">
+                            <img id = "skill3" src="Icons/Menu yellow.jpg" width="76" height="76" />
+                            <h3>Familiar</h3>
+                            <p>Unix, Git, R, Javascript, Swipl</p>
+                        </div>
+                    </div>
+                    <div id ="conversation">
+                        <h2>Conversation Starters</h2>
+                        <h4>My Favorite...</h4>
+                        
+                            <div class="fav">
+                                <img src="Icons/Music.jpg" width="200" height="200"/>
+                                <h3>Music</h3>
+                                <p>Fleetwood Mac <br> The Black Keys <br> Pink Floyd</p>
+                            </div>
+                            <div class="fav">
+                                    <img src="Icons/book.jpg" width="200" height="200"/>
+                                    <h3>Books</h3>
+                                    <p>The Brief Wondrous Life of Oscar Wao <br> The Hitchhiker's Guide to the Galaxy <br>
+                                        Blood Meridian
+                                    </p>
+                                </div>
+                            <div class="fav">
+                                <img src="Icons/ticket.jpg" width="200" height="200"/>
+                                <h3>Movies</h3>
+                                <p>Reservoir Dogs <br> The Dark Knight <br> The Godfather</p>
+                            </div>
+                            <div id = "left" class="fav2">
+                                    <img src="Icons/album.jpg" width="200" height="200"/>
+                                    <h3>Albums</h3>
+                                    <p>Wish You Were Here<br> Random Access Memories <br> Tango In The Night</p>
+                                </div>
+                            <div id = "right" class="fav2">
+                                    <img src="Icons/tv.jpg" width="200" height="200"/>
+                                    <h3>Television</h3>
+                                    <p>The Simpsons<br> Twin Peaks<br> The Office</p>
+                                </div>
+
+                        <h4>By The Numbers...</h4>
+                            <div class = "num">
+                                <h5>15+</h5>
+                                <p>million meters rowed</p>
+                            </div>
+                            <div class = "num">
+                                <h5>18</h5>
+                                <p>US states visited</p>
+                            </div>
+                    </div>
+  <script>
+    function myFunction() {
+     document.getElementById("myDropdown").classList.toggle("show");
+     }
+  window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+                    </script>
+        </body>
+
+</html>

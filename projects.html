@@ -1,0 +1,221 @@
+<html>
+    <head>
+            <title>Projects</title>
+            <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,400i,900&display=swap" rel="stylesheet" />
+            <link href="projects.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+            <div id="top">
+                    <div id="page">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class = "subs">
+                            <img src="Icons/House blue.jpg" width = "50" height = "50" />
+                            <a href="index.html">Home</a>
+                            </div>
+                            <div class = "subs">
+                                    <img src="Icons/Oar blue.jpg" width = "50" height = "50" />
+                                    <a href="about.html">About</a>
+                            </div>
+                            <div class = "subs">
+                                    <img src="Icons/Shirt blue.jpg" width = "50" height = "50" />
+                                    <a href="experience.html">Experience</a>
+                            </div>
+                            <div class = "subs">
+                                    <img src="Icons/Git light blue.jpg" width = "50" height = "50" />
+                                    <a href="projects.html">Projects</a>
+                            </div>
+                            <div class = "subs">
+                                    <img src="Icons/Speech Bubble blue.jpg" width = "50" height = "50" />
+                                    <a href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <div id="bottom">
+                    <div class = "row">
+                            <div class = "box">
+                                <img src="Icons/website.jpg" width="225" height="225" onclick="websiteOn()"/>
+                                <div class = "text" onclick="websiteOn()">
+                                        <h2>Expand</h2>
+                                </div>
+                                <h3>Personal Website</h3>
+                            </div>
+                            <div class = "box">
+                                        <img src="Icons/monopoly.jpg" width="225" height="225" onclick="monopolyOn()" />
+                                        <div class = "text" onclick="monopolyOn()">
+                                                <h2>Expand</h2>
+                                        </div>
+                                        <h3>Linux Monopoly</h3>
+                            </div>
+                            <div class = "box">
+                                        <img src="Icons/adventure.jpg" width="225" height="225" onclick="adventureOn()" />
+                                        <div class = "text" onclick="adventureOn()">
+                                                <h2>Expand</h2>
+                                        </div>
+                                        <h3>Text Adventure Game</h3>
+                            </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "box">
+                                <img src="Icons/cpu.jpg" width="225" height="225" onclick="cpuOn()" />
+                                        <div class = "text" onclick="cpuOn()">
+                                                <h2>Expand</h2>
+                                        </div>
+                                        <h3>Pipelined CPU</h3>
+                        </div>
+                        <div class = "box">
+                                <img src="Icons/planetx.jpg" width="225" height="225" onclick="planetxOn()" />
+                                         <div class = "text" onclick="planetxOn()">
+                                               <h2>Expand</h2>
+                                        </div>
+                                        <h3>Planet X</h3>
+                                </div>
+                    </div>
+
+                    <div class = "project" id = "websiteOver">
+                        <img class="x" src="Icons/x.jpg" height = "40" width = "40" onclick="websiteOff()"/>
+                        <img class="cover" src="Icons/website.jpg" height = "325" width = "325" />
+                        <h1>Personal Website</h1>
+                        <p>The site you are viewing right now is a page on my personal website,
+                           a project I undertook on my own in the summer of 2019 to hone my skills
+                           in web development using HTML, CSS, and Javascript. I developed this site
+                           using Visual Studio Code for an IDE, and Git for version control, and
+                           it is hosted using Github pages. I also personally designed and constructed
+                           almost every icon and image on this site using Microsoft Publisher.
+                        </p>
+                        <h5>Skills used: HTML, CSS, Javascript, Git, VS Code, MS Publisher</h5>
+
+                    </div>
+                    <div class = "project" id = "monopolyOver">
+                        <img class="x" src="Icons/x.jpg" height = "40" width = "40" onclick="monopolyOff()"/>
+                        <img class="cover" src="Icons/monopoly.jpg" height = "325" width = "325" />
+                        <h1>Linux Monopoly</h1>
+                        <p>This project was completed with a group of three other students in 
+                           the functional programming class CS 3110. This was an open project in the
+                           sense that students were free to pursue virtually any idea and were given 
+                           no starter code, so we built the whole game from scratch. The game features
+                           every aspect of the game of Monopoly, including support for up to four players,
+                           rent, jail, houses and hotels, chance and community chest cards, and a colorful
+                           board that updates with every roll. The game is played in the Linux terminal.
+                        </p>
+                        <h5>Skills used: OCaml, functional programming, Git, VS Code, Linux terminal</h5>
+
+                    </div>
+
+                    <div class = "project" id = "adventureOver">
+                        <img class="x" src="Icons/x.jpg" height = "40" width = "40" onclick="adventureOff()"/>
+                        <img class="cover" src="Icons/adventure.jpg" height = "325" width = "325" />
+                        <h1>Text Adventure Game</h1>
+                        <p>This project was completed with a group of three other students as part of
+                           the functional programming class CS 3110. The project is a text adventure game
+                           similar (in style but not scale) to the "Hitchhikers Guide to the Galaxy" text game,
+                           played in the Linux terminal by typing commands. The player is meant to travel 
+                           around Cornell's campus finding items and keys used to unlock doors in Gates
+                           Hall, the main CS building on campus. The engine was created using OCaml and the 
+                           game data using a JSON file. VS Code was used for an IDE and Git for version control.
+                        </p>
+                         <h5>Skills used: OCaml, functional programming, Git, VS Code, Linux terminal, JSON files</h5>
+        
+                        </div>
+
+                <div class = "project" id = "cpuOver">
+                        <img class="x" src="Icons/x.jpg" height = "40" width = "40" onclick="cpuOff()"/>
+                        <img class="cover" src="Icons/cpu.jpg" height = "325" width = "325" />
+                        <h1>Pipelined CPU</h1>
+                        <p>This project was part of the computer architecture and systems programming class 
+                                CS 3410. The project consists of a virtual circuit constructed using the 
+                                program Logisim. The end result is a CPU that can read nearly every 
+                                instruction in the MIPS assembly language, including arithmetic calculations, logical
+                                operations, storing to and loading from memory, and access to 32 registers. 
+                                The CPU is pipelined in 5 stages, increasing efficiency and overall speed.
+                                In this way, the CPU is a functional model of a real CPU that could be utilized
+                                by a modern computer.
+                </p>
+                 <h5>Skills used: digital logic, computer organization, MIPS, logisim </h5>
+                
+                </div>
+
+                <div class = "project" id = "planetxOver">
+                        <img class="x" src="Icons/x.jpg" height = "40" width = "40" onclick="planetxOff()"/>
+                        <img class="cover" src="Icons/planetx.jpg" height = "325" width = "325" />
+                         <h1>Planet X</h1>
+                        <p>This project was part of the data structures and object oriented programming class
+                           CS 2110. The challenge of the project was to devise an efficient and effective
+                           algorithm for a sapceship to travel the edges of a graph with nodes represented by
+                           planets, each of which has a known number of gems. The spaceship has a finite amount
+                           of fuel and must gather as many gems as possible and return to earth without running
+                           out of fuel. Ultimately, my algorithm, which compared the number of gems that would be gained
+                           by traveling to every unvisited planet within fuel range of earth, was among the 
+                           most effective for many randomly generated graphs. 
+                </p>
+                <h5>Skills used: Java, data structures, object oriented programming, analysis of algorithms</h5>
+                
+                </div>
+
+            </div>
+            <script>
+                    function myFunction() {
+                     document.getElementById("myDropdown").classList.toggle("show");
+                     }
+                  window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+                <script>
+                        function websiteOn() {
+                        document.getElementById("websiteOver").style.display = "block";
+                        }
+
+                        function websiteOff() {
+                         document.getElementById("websiteOver").style.display = "none";
+                        }
+
+                        function monopolyOn() {
+                        document.getElementById("monopolyOver").style.display = "block";
+                        }
+
+                        function monopolyOff() {
+                        document.getElementById("monopolyOver").style.display = "none";
+                        }
+
+                        function adventureOn() {
+                        document.getElementById("adventureOver").style.display = "block";
+                        }
+
+                        function adventureOff() {
+                        document.getElementById("adventureOver").style.display = "none";
+                        }
+
+                        function cpuOn() {
+                        document.getElementById("cpuOver").style.display = "block";
+                        }
+
+                        function cpuOff() {
+                        document.getElementById("cpuOver").style.display = "none";
+                        }
+
+                        function planetxOn() {
+                        document.getElementById("planetxOver").style.display = "block";
+                        }
+
+                        function planetxOff() {
+                        document.getElementById("planetxOver").style.display = "none";
+                        }
+
+                </script>
+    </body>
+</html>

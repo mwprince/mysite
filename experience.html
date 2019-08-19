@@ -1,0 +1,124 @@
+<html>
+        <head>
+                <title>Experience</title>
+                <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,400i,900&display=swap" rel="stylesheet" />
+                <link href="experience.css" type="text/css" rel="stylesheet" />
+        </head>
+        <body>
+                <div id="top">
+                        <div id="page">
+                            <h1>Experience</h1>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="myFunction()"></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <div class = "subs">
+                                <img src="Icons/House green.jpg" width = "50" height = "50" />
+                                <a href="index.html">Home</a>
+                                </div>
+                                <div class = "subs">
+                                        <img src="Icons/Oar green.jpg" width = "50" height = "50" />
+                                        <a href="about.html">About</a>
+                                </div>
+                                <div class = "subs">
+                                        <img src="Icons/Shirt.jpg" width = "50" height = "50" />
+                                        <a href="experience.html">Experience</a>
+                                </div>
+                                <div class = "subs">
+                                        <img src="Icons/Git icon green.jpg" width = "50" height = "50" />
+                                        <a href="projects.html">Projects</a>
+                                </div>
+                                <div class = "subs">
+                                        <img src="Icons/Speech Bubble green.jpg" width = "50" height = "50" />
+                                        <a href="contact.html">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div id="bottom">
+                    <div class="subtitle">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="entryE">
+                        <div class="date">
+                            <h4>August 2017 - <br>
+                            May 2021</h4>
+                        </div>
+                        <div class="info">
+                            <h1>Cornell University BS</h1>
+                            <h2>Computer Science</h2>
+                            <p>Selected coursework: Object Oriented Programming, Data Structures, Systems Programming,<br>
+                                Computer System Organization, Functional Programming, Computational Linguistics
+                            </p>
+                        </div>
+                    </div>
+                    <div class="entryE">
+                            <div class="date">
+                                <h4>September 2013 - <br>
+                                May 2017</h4>
+                            </div>
+                            <div class="info">
+                                <h1>Christian Brothers Academy</h1>
+                                <h2>Lincroft, NJ</h2>
+                                <p>High School: Merits include #1 class rank and Valedictorian <br>
+                                    Activities: Varsity Rowing (4 years), NHS (2 years), service (200+ hours)
+                                </p>
+                            </div>
+                    </div>
+                    <div class="subtitle">
+                            <h2>Work Experience</h2>
+                    </div>
+                    <div class="entry">
+                            <div id="ssllc" class="date">
+                                <h4>May 2018 - <br>
+                                August 2019</h4>
+                            </div>
+                            <div class="info">
+                                <h1>Sinisi Solutions LLC</h1>
+                                <h2>Manasquan, NJ</h2>
+                                <p>As an engineering intern, I overhauled the company's website, making it more organized 
+                                    and user-friendly. <br> I also maintained and improved the client database, produced design 
+                                    materials and schematics related <br> to engineering projects, and constructed marketing and 
+                                    other materials related to company. I also <br> conducted research, including formal reports, 
+                                    on new engineering technology.
+                                        
+                                </p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                                <div class="date">
+                                    <h4>May 2017 - <br>
+                                    August 2017</h4>
+                                </div>
+                                <div class="info">
+                                    <h1>Spring Lake Bath and Tennis Club</h1>
+                                    <h2>Spring Lake, NJ</h2>
+                                    <p>The summer after I graduated from high school I worked at a beach and social club near my house, <br>
+                                        contributing to the pleasant experiences of club members by bussing and running plates to 
+                                        and <br> from tables at club lunch, dinner, and special events. I developed practical skills 
+                                        such as communication, <br> manners, and teamwork.  
+                                    </p>
+                                </div>
+                            </div>
+                </div>
+
+                <script>
+                        function myFunction() {
+                         document.getElementById("myDropdown").classList.toggle("show");
+                         }
+                      window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                                        </script>
+        </body>
+</html>
