@@ -39,28 +39,35 @@
             <div id="bottom">
                     <div class = "row">
                             <div class = "box">
+                                <img src="Icons/PQ.png" width="225" height="225" onclick="PQOn()"/>
+                                <div class = "text" onclick="PQOn()">
+                                        <h2>Expand</h2>
+                                </div>
+                                <h3>Politician Quotes</h3>
+                            </div>
+                            <div class = "box">
                                 <img src="Icons/website.jpg" width="225" height="225" onclick="websiteOn()"/>
                                 <div class = "text" onclick="websiteOn()">
                                         <h2>Expand</h2>
                                 </div>
-                                <h3>Personal Website</h3>
+                                <h3>Personal Website</h3> 
                             </div>
                             <div class = "box">
-                                        <img src="Icons/monopoly.jpg" width="225" height="225" onclick="monopolyOn()" />
-                                        <div class = "text" onclick="monopolyOn()">
-                                                <h2>Expand</h2>
-                                        </div>
-                                        <h3>Linux Monopoly</h3>
-                            </div>
-                            <div class = "box">
-                                        <img src="Icons/adventure.jpg" width="225" height="225" onclick="adventureOn()" />
-                                        <div class = "text" onclick="adventureOn()">
-                                                <h2>Expand</h2>
-                                        </div>
-                                        <h3>Text Adventure Game</h3>
+                                <img src="Icons/monopoly.jpg" width="225" height="225" onclick="monopolyOn()" />
+                                <div class = "text" onclick="monopolyOn()">
+                                        <h2>Expand</h2>
+                                </div>
+                                <h3>Linux Monopoly</h3> 
                             </div>
                     </div>
                     <div class = "row">
+                        <div class = "box">
+                                <img src="Icons/adventure.jpg" width="225" height="225" onclick="adventureOn()" />
+                                <div class = "text" onclick="adventureOn()">
+                                        <h2>Expand</h2>
+                                </div>
+                                <h3>Text Adventure Game</h3>
+                    </div>
                         <div class = "box">
                                 <img src="Icons/cpu.jpg" width="225" height="225" onclick="cpuOn()" />
                                         <div class = "text" onclick="cpuOn()">
@@ -76,6 +83,23 @@
                                         <h3>Planet X</h3>
                                 </div>
                     </div>
+                    
+                    <div class = "project" id = "PQOver">
+                        <img class="x" src="Icons/x.jpg" height = "40" width = "40" onclick="PQOff()"/>
+                        <img class="cover" src="Icons/PQ.png" height = "325" width = "325" />
+                        <h1>Politican Quotes</h1>
+                        <p>Politician Quotes is my final project for CS 4300: Language and Information.
+                           The app analyzed a large corpus of political texts, including debate transcripts,
+                           speeches, and tweets to discover similarities and differences in political speech 
+                           among politicians in the United States. I worked on this project as part of a 
+                           team of four, with my role emphasizing the UI, front-end visuals, and small pieces
+                           of the back-end. We used HTML, CSS, and some Javascript for the front-end, and python
+                           for the back-end. We used VS Code for IDE and git for version control.
+                        </p>
+                        <h5>Skills used: App development, Python, HTML, CSS, Git, VS Code</h5>
+
+                    </div>
+
 
                     <div class = "project" id = "websiteOver">
                         <img class="x" src="Icons/x.jpg" height = "40" width = "40" onclick="websiteOff()"/>
@@ -176,6 +200,14 @@
                 }
                 </script>
                 <script>
+                        function PQOn() {
+                         document.getElementById("PQOver").style.display = "block";
+                        }
+
+                        function PQOff() {
+                         document.getElementById("PQOver").style.display = "none";
+                        }
+
                         function websiteOn() {
                         document.getElementById("websiteOver").style.display = "block";
                         }
